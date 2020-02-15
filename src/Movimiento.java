@@ -3,6 +3,9 @@ public class Movimiento {
     private double cantidad;
     private double montoFinal;
     private String tipoMovimiento;
+    final static int RETIRO = 0;
+    final static int DEPOSITO = 1;
+    final static int CREDITO = 2;
 
     public Movimiento(double saldoActual, double cantidad, int tipoMovimiento){ //0 para retiro, 1 para depósito, 2 solicitud crédito
         this.montoInicial = saldoActual;

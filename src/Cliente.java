@@ -62,7 +62,7 @@ public class Cliente {
         System.out.println("Total: "+credito);
 
         clienteCredito.setSaldo(clienteCredito.getSaldo() - (clienteCredito.getSaldo() * 0.90));
-        this.movimientos.add(new Movimiento(this.saldo, credito, 2));
+        this.movimientos.add(new Movimiento(this.saldo, credito, Movimiento.CREDITO));
         this.saldo += credito;
     }
 
